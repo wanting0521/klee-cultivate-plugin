@@ -1,0 +1,17 @@
+# 机器人编号（首次为本地随机生成一个9位字符，大小写英文字母加数字，可修改，同样格式和随机生成的一样）
+ID: ''
+# 机器人生日（首次为启动机器人的时间，格式：YYYY-MM-DD HH:mm:ss）
+birthday: ''
+# 机器人标签（最多四个）
+botLabel:
+  - 'Yunzai-Bot'
+  - 'kleePlugin'
+  - '原神'
+  - '可可爱爱'
+# 主人标签（最多五个）
+masterLabel:
+  - 'Yunzai-Bot'
+  - 'kleePlugin'
+  - '原神'
+  - '好人'
+  - '善良'

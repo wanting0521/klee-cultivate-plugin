@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{botName}}工作情况</title>
+    <link href="{{resAbsPath}}\WorkStatus.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="workStatus">
+        <h1 class="workStatusTitle">{{botName}}工作情况</h1>
+        <p class="isWork">{{htmlData['workStatus']}}</p>
+        <h2 class="workTimeTitle">开始工作</h2>
+        <p class="workTime">{{htmlData['workTime']}}</p>
+        <h2 class="relaxTimeTitle">开始休息</h2>
+        <p class="relaxTime">{{htmlData['relaxTime']}}</p>
+        <p class="copyright">Created By Yunzai-Bot v{{version}} && kleePlugin v{{kleeVersion}}</p>
+    </div>
+</body>
+
+</html>

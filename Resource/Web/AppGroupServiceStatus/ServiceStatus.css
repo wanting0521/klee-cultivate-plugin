@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.serviceStatus {
+    position: relative;
+    width: 800px;
+    height: 1100px;
+    background-image: url("../../../Resource/Img/BackGround/群服务状态背景.png");
+    background-size: 800px 1100px;
+    font-family: 幼圆, serif;
+    font-size: 45px;
+    text-align: center;
+}
+
+.serviceStatusTitle {
+    position: absolute;
+    width: 300px;
+    top: 100px;
+    left: 250px;
+    font-weight: 700;
+    color: yellow;
+    font-size: 45px;
+}
+
+.serviceStatusTable {
+    position: absolute;
+    width: 800px;
+    font-size: 30px;
+    top: 250px;
+    font-weight: 700;
+}
+
+.serviceStatusTable td {
+    height: 50px;
+}
+
+.allServiceStatus {
+    position: absolute;
+    width: 400px;
+    top: 180px;
+    left: 195px;
+    font-size: 35px;
+    font-weight: 700;
+    color: red;
+}
+
+.copyright {
+    position: absolute;
+    top: 1070px;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    width: 800px;
+}

@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Huajuanti;
+    src: url('../../Font/Huajuanti.ttf')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    font-style: normal;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.kleeHelp {
+    position: relative;
+    width: 800px;
+    height: 1000px;
+    background: url("../../Img/BackGround/可莉帮助背景图片.jpg");
+    background-size: 800px 1000px;
+    font-family: Huajuanti, serif;
+}
+
+.kleeHelpTitle {
+    position: absolute;
+    width: 800px;
+    text-align: center;
+    top: 25px;
+    color: blue;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.BotModuleTitle {
+    position: absolute;
+    top: 70px;
+    left: 5px;
+    color: yellow;
+}
+
+.BotModule {
+    position: absolute;
+    width: 390px;
+    height: 205px;
+    background-color: rgba(255, 192, 203, 0.5);
+    top: 100px;
+    left: 5px;
+    border: 1px solid skyblue;
+}
+
+.BotModuleAppTitle {
+    position: relative;
+    width: 390px;
+    top: 5px;
+    text-align: center;
+    color: green;
+    font-size: 25px;
+}
+
+.kleeModuleTitle {
+    position: absolute;
+    top: 70px;
+    left: 405px;
+    color: yellow;
+}
+
+.kleeModule {
+    position: absolute;
+    width: 390px;
+    height: 55px;
+    background-color: rgba(255, 192, 203, 0.5);
+    top: 100px;
+    left: 405px;
+    border: 1px solid skyblue;
+}
+
+.GroupModuleTitle {
+    position: absolute;
+    top: 165px;
+    left: 405px;
+    color: yellow;
+}
+
+.GroupModule {
+    position: absolute;
+    width: 390px;
+    height: 200px;
+    background-color: rgba(255, 192, 203, 0.5);
+    top: 200px;
+    left: 405px;
+    border: 1px solid skyblue;
+}
+
+.BotModuleAppServices {
+    position: relative;
+    width: 390px;
+    top: 5px;
+    font-size: 15px;
+}
+
+.fontColorHelp {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.masterPermission {
+    vertical-align: middle;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.colorfulCircle {
+    position: absolute;
+    left: 450px;
+    top: 5px;
+}
+
+.groupUse {
+    vertical-align: middle;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: yellowgreen;
+}
+
+.agentPermission {
+    vertical-align: middle;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: cyan;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 5px;
+    width: 800px;
+    text-align: center;
+}

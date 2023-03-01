@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>可莉帮助</title>
+    <link href="{{resAbsPath}}\kleeHelp.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="kleeHelp">
+        <h1 class="kleeHelpTitle">可莉帮助</h1>
+        <p class="fontColorHelp">
+            <i>黄色代表kleePlugin/App/下的文件夹名(模块)</i>
+            <br>
+            <i>绿色代表kleePlugin的功能名(功能)</i>
+            <br>
+            <i>#?代表'#'可要不可要，如果不带'#'没用试试加上</i>
+        </p>
+        <p class="colorfulCircle">
+            <i class="masterPermission"></i>
+            <i>代表需要姐姐权限</i>
+            <i class="groupUse"></i>
+            <i>代表需要在群聊中使用</i>
+            <i class="agentPermission"></i>
+            <i>代表需要代理人权限</i>
+        </p>
+        <h2 class="BotModuleTitle">Bot</h2>
+        <div class="BotModule">
+            <h3 class="BotModuleAppTitle">status</h3>
+            <ul class="BotModuleAppServices">
+                <li>
+                    <i style="color: red">#?机器人身份证</i>
+                    <i>查看机器人的身份证信息</i>
+                </li>
+                <li>
+                    <i style="color: red">#?可莉状态</i>
+                    <i>查看机器人的状态</i>
+                </li>
+                <li>
+                    <i style="color: red">#?设置名字xx</i>
+                    <i>给机器人取个名字</i>
+                    <span class="masterPermission"></span>
+                </li>
+            </ul>
+            <h3 class="BotModuleAppTitle">work</h3>
+            <ul class="BotModuleAppServices">
+                <li>
+                    <i style="color: red">#?查看工作情况</i>
+                    <i>查看可莉工作状态和工作时间</i>
+                </li>
+                <li>
+                    <i style="color: red">#?可莉开始工作</i>
+                    <i>让机器人处理消息</i>
+                    <span class="masterPermission"></span>
+                </li>
+                <li>
+                    <i style="color: red">#?可莉结束工作</i>
+                    <i>让机器人不处理消息</i>
+                    <span class="masterPermission"></span>
+                </li>
+                <li>
+                    <i style="color: red">#?开启定时工作</i>
+                    <i>让机器人定时休息和工作</i>
+                    <span class="masterPermission"></span>
+                </li>
+                <li>
+                    <i style="color: red">#?关闭定时工作</i>
+                    <i>不让机器人定时休息和工作</i>
+                    <span class="masterPermission"></span>
+                </li>
+            </ul>
+        </div>
+        <h2 class="kleeModuleTitle">klee</h2>
+        <div class="kleeModule">
+            <h3 class="BotModuleAppTitle">help</h3>
+            <ul class="BotModuleAppServices">
+                <li>
+                    <i style="color: red">#?可莉(Help|help|功能|帮助|菜单)</i>
+                    <i>查看可莉插件的功能</i>
+                </li>
+            </ul>
+        </div>
+        <h2 class="GroupModuleTitle">Group</h2>
+        <div class="GroupModule">
+            <h3 class="BotModuleAppTitle">serviceStatus</h3>
+            <ul class="BotModuleAppServices">
+                <li>
+                    <i style="color: red">#?开启所有服务</i>
+                    <i>对本群开启所有服务</i>
+                    <span class="groupUse"></span>
+                    <span class="agentPermission"></span>
+                    <span class="masterPermission"></span>
+                </li>
+                <li>
+                    <i style="color: red">#?关闭所有服务</i>
+                    <i>对本群关闭所有服务</i>
+                    <span class="groupUse"></span>
+                    <span class="agentPermission"></span>
+                    <span class="masterPermission"></span>
+                </li>
+                <li>
+                    <i style="color: red">#?添加代理人+qq</i>
+                    <i>添加群友为机器人的代理人</i>
+                    <span class="groupUse"></span>
+                    <span class="masterPermission"></span>
+                </li>
+                <li>
+                    <i style="color: red">#?删除代理人+qq</i>
+                    <i>取消群友的机器人代理人资格</i>
+                    <span class="groupUse"></span>
+                    <span class="masterPermission"></span>
+                </li>
+                <li>
+                    <i style="color: red">#?查看服务状态</i>
+                    <i>查看群聊中所有服务的状态</i>
+                    <span class="groupUse"></span>
+                </li>
+                <li>
+                    <i style="color: red">#?开启xx服务</i>
+                    <i>对本群开启某服务</i>
+                    <span class="groupUse"></span>
+                    <span class="agentPermission"></span>
+                    <span class="masterPermission"></span>
+                </li>
+                <li>
+                    <i style="color: red">#?关闭xx服务</i>
+                    <i>对本群关闭某服务</i>
+                    <span class="groupUse"></span>
+                    <span class="agentPermission"></span>
+                    <span class="masterPermission"></span>
+                </li>
+                <li>
+                    <i style="color: red">#?本群代理人</i>
+                    <i>查看本群的所有代理人</i>
+                    <span class="groupUse"></span>
+                </li>
+                <li>
+                    <i style="color: red">#?查看所有服务</i>
+                    <i>查看已安装的所有服务</i>
+                </li>
+            </ul>
+        </div>
+        <p class="copyright">Created By Yunzai-Bot v{{version}} && kleePlugin v{{kleeVersion}}</p>
+    </div>
+</body>
+</html>

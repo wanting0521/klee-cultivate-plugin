@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{htmlData['groupQQ']}}服务状态</title>
+    <link href="{{resAbsPath}}\ServiceStatus.css" rel="stylesheet">
+</head>
+<body>
+    <div class="serviceStatus">
+        <h1 class="serviceStatusTitle">本群服务状态</h1>
+        <p class="allServiceStatus">
+            {{if htmlData['allServiceStatus'] === 'on'}}对本群的所有服务已开启{{/if}}
+            {{if htmlData['allServiceStatus'] === 'off'}}对本群的所有服务已关闭{{/if}}
+            {{if htmlData['allServiceStatus'] === 'notAll'}}本群服务状态如下{{/if}}
+        </p>
+        <table class="serviceStatusTable">
+            <thead>
+                <tr>
+                    <td>插件</td>
+                    <td>模块</td>
+                    <td>服务</td>
+                    <td>状态</td>
+                </tr>
+            </thead>
+            <tbody>
+                {{each htmlData['groupServiceStatus']}}
+                <tr>
+                    <td style="color: deeppink;">{{$value['pluginName']}}</td>
+                    <td style="color:greenyellow;">{{$value['modelName']}}</td>
+                    <td style="color: blue;">{{$value['serviceName']}}</td>
+                    <td style="color:cyan;">
+                        {{if $value['status'] === 'on'}}√{{/if}}
+                        {{if $value['status'] === 'off'}}×{{/if}}
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <p class="copyright">Created By Yunzai-Bot v{{version}} && kleePlugin v{{kleeVersion}}</p>
+    </div>
+</body>
+</html>

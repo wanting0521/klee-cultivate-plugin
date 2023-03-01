@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>机器人身份证</title>
+        <script src="{{resAbsPath}}\..\JQuery\MyJQuery.js"></script>
+        <link href="{{resAbsPath}}\BotIDCard.css" rel="stylesheet">
+        <script src="{{resAbsPath}}\BotIDCard.js"></script>
+    </head>
+    <body>
+        <div class="IDCard">
+            <img alt="机器人头像" class="botHeadPortrait" src="{{htmlData.botAvatarUrl}}">
+            <div class="basicInfo">
+                <img alt="文档" src="{{resAbsPath}}\..\..\Img\Icon\文档.png" class="basicInfoDocumentIcon">
+                <h1 class="basicInfoTitle">基本信息</h1>
+                <table class="basicInfoTable">
+                    <tr>
+                        <td>
+                            【编号】
+                        </td>
+                        <td>
+                            {{htmlData.botID}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            【名字】
+                        </td>
+                        <td>
+                            {{botName}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            【生日】
+                        </td>
+                        <td>
+                            {{htmlData.botBirthday}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            【工龄】
+                        </td>
+                        <td>
+                            {{htmlData.botWorkTime}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            【标签】
+                        </td>
+                        <td class="label">
+                            <span style="background-color: red">
+                                {{htmlData.botLabel[0]}}
+                            </span>
+                            <span style="background-color: green">
+                                {{htmlData.botLabel[1]}}
+                            </span>
+                            <span style="background-color: pink">
+                                {{htmlData.botLabel[2]}}
+                            </span>
+                            <span style="background-color: purple">
+                                {{htmlData.botLabel[3]}}
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <img alt="主人头像" class="masterHeadPortrait" src="{{htmlData.masterAvatarUrl}}">
+            <div class="masterInfo">
+                <img alt="文档" src="{{resAbsPath}}\..\..\Img\Icon\文档镜像.png" class="masterInfoDocumentIcon">
+                <h1 class="masterInfoTitle">主人信息</h1>
+                <table class="masterInfoTable">
+                    <tr>
+                         <td>
+                            【昵称】
+                        </td>
+                        <td>
+                            {{htmlData.masterNickName}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            【QQ】
+                        </td>
+                        <td>
+                            {{htmlData.masterQQ}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            【标签】
+                        </td>
+                        <td class="label">
+                            <span style="background-color: orange">
+                                {{htmlData.masterLabel[0]}}
+                            </span>
+                            <span style="background-color: purple">
+                                {{htmlData.masterLabel[1]}}
+                            </span>
+                            <span style="background-color: pink">
+                                {{htmlData.masterLabel[2]}}
+                            </span>
+                            <span style="background-color: green">
+                                {{htmlData.masterLabel[3]}}
+                            </span>
+                            <span style="background-color: red">
+                                {{htmlData.masterLabel[4]}}
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p class="copyright">Created By Yunzai-Bot v{{version}} && kleePlugin v{{kleeVersion}}</p>
+        </div>
+    </body>
+</html>

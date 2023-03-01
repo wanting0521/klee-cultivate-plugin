@@ -1,0 +1,212 @@
+# 功能配置（无需替换'可莉'和'雪宝'，在功能运行时会自动替换成你定义的名字）
+
+# klee 模块
+klee:
+  'help':
+    priority: 25
+    rule:
+      'sendkleeHelp':
+        reg: '^#?可莉(Help|help|功能|帮助|菜单)$'
+        regKey: ''
+        dsc: '查看可莉插件的功能'
+        chatType: 'all'
+        event: 'message'
+        isShowLog: true
+        permission: 'all'
+        permissionLevel: 0
+        favorabilityLevel: 0
+
+# Bot 模块
+Bot:
+ 'status':
+   priority: 25
+   rule:
+    'viewBotIDCard':
+      reg: '^#?机器人身份证$'
+      regKey: ''
+      dsc: '查看机器人的身份证信息'
+      chatType: 'all'
+      event: 'message'
+      isShowLog: true
+      permission: 'all'
+      permissionLevel: 0
+      favorabilityLevel: 0
+    'viewBotStatus':
+      reg: '^#?可莉状态$'
+      regKey: ''
+      dsc: '查看机器人的状态'
+      chatType: 'all'
+      event: 'message'
+      isShowLog: true
+      permission: 'all'
+      permissionLevel: 0
+      favorabilityLevel: 0
+    'setBotName':
+      reg: '^#?设置名字(.)+$'
+      regKey: '设置名字'
+      dsc: '给机器人取个名字'
+      chatType: 'all'
+      event: 'message'
+      isShowLog: true
+      permission: 'master'
+      permissionLevel: 0
+      favorabilityLevel: 0
+ 'work':
+   priority: -25
+   rule:
+    'dealMsg':
+      reg: ''
+      regKey: ''
+      dsc: '监听消息，视工作状态决定是否处理'
+      chatType: 'all'
+      event: 'message'
+      isShowLog: false
+      permission: 'all'
+      permissionLevel: 0
+      favorabilityLevel: 0
+    'viewWorkStatus':
+      reg: '^#?查看工作情况$'
+      regKey: ''
+      dsc: '查看可莉工作状态和工作时间'
+      chatType: 'all'
+      event: 'message'
+      isShowLog: true
+      permission: 'all'
+      permissionLevel: 0
+      favorabilityLevel: 0
+    'startWork':
+      reg: '^#?可莉开始工作$'
+      regKey: ''
+      dsc: '让机器人处理消息'
+      chatType: 'all'
+      event: 'message'
+      isShowLog: true
+      permission: 'master'
+      permissionLevel: 0
+      favorabilityLevel: 0
+    'endWork':
+      reg: '^#?可莉结束工作$'
+      regKey: ''
+      dsc: '让机器人不处理消息'
+      chatType: 'all'
+      event: 'message'
+      isShowLog: true
+      permission: 'master'
+      permissionLevel: 0
+      favorabilityLevel: 0
+    'openTimedWork':
+      reg: '^#?开启定时工作$'
+      regKey: ''
+      dsc: '让机器人定时休息和工作'
+      chatType: 'all'
+      event: 'message'
+      isShowLog: true
+      permission: 'master'
+      permissionLevel: 0
+      favorabilityLevel: 0
+    'endTimedWork':
+      reg: '^#?关闭定时工作$'
+      regKey: ''
+      dsc: '不让机器人定时休息和工作'
+      chatType: 'all'
+      event: 'message'
+      isShowLog: true
+      permission: 'master'
+      permissionLevel: 0
+      favorabilityLevel: 0
+
+# Group 模块
+Group:
+  'serviceStatus':
+    priority: 25
+    rule:
+     'openAllService':
+       reg: '^#?开启所有服务$'
+       regKey: ''
+       dsc: '对本群开启所有服务'
+       chatType: 'group'
+       event: 'message'
+       isShowLog: true
+       permission: 'masterAndAgent'
+       permissionLevel: 0
+       favorabilityLevel: 0
+     'closeAllService':
+       reg: '^#?关闭所有服务$'
+       regKey: ''
+       dsc: '对本群关闭所有服务'
+       chatType: 'group'
+       event: 'message'
+       isShowLog: true
+       permission: 'masterAndAgent'
+       permissionLevel: 0
+       favorabilityLevel: 0
+     'addAgent':
+       reg: '^#?添加代理人[0-9]+$'
+       regKey: '添加代理人'
+       dsc: '添加群友为机器人的代理人'
+       chatType: 'group'
+       event: 'message'
+       isShowLog: true
+       permission: 'master'
+       permissionLevel: 0
+       favorabilityLevel: 0
+     'delAgent':
+       reg: '^#?删除代理人[0-9]+$'
+       regKey: '删除代理人'
+       dsc: '取消群友的机器人代理人资格'
+       chatType: 'group'
+       event: 'message'
+       isShowLog: true
+       permission: 'master'
+       permissionLevel: 0
+       favorabilityLevel: 0
+     'viewServiceStatus':
+       reg: '^#?查看服务状态$'
+       regKey: ''
+       dsc: '查看群聊中所有服务的状态'
+       chatType: 'group'
+       event: 'message'
+       isShowLog: true
+       permission: 'all'
+       permissionLevel: 0
+       favorabilityLevel: 0
+     'openService':
+       reg: '^#?开启(.)+服务$'
+       regKey: '开启'
+       dsc: '对本群开启某服务'
+       chatType: 'group'
+       event: 'message'
+       isShowLog: true
+       permission: 'masterAndAgent'
+       permissionLevel: 0
+       favorabilityLevel: 0
+     'closeService':
+       reg: '^#?关闭(.)+服务$'
+       regKey: '关闭'
+       dsc: '对本群关闭某服务'
+       chatType: 'group'
+       event: 'message'
+       isShowLog: true
+       permission: 'masterAndAgent'
+       permissionLevel: 0
+       favorabilityLevel: 0
+     'viewAgents':
+       reg: '^#?本群代理人$'
+       regKey: ''
+       dsc: '查看本群的所有代理人'
+       chatType: 'group'
+       event: 'message'
+       isShowLog: true
+       permission: 'all'
+       permissionLevel: 0
+       favorabilityLevel: 0
+     'viewAllServices':
+       reg: '^#?查看所有服务$'
+       regKey: ''
+       dsc: '查看已安装的所有服务'
+       chatType: 'all'
+       event: 'message'
+       isShowLog: true
+       permission: 'all'
+       permissionLevel: 0
+       favorabilityLevel: 0

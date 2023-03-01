@@ -1,0 +1,51 @@
+#更新日志
+3.1.2:
+  - 修复了机器人改名问题
+3.1.3:
+  - 可莉帮助背景图
+3.1.4:
+  - 修复启动bug
+3.1.5:
+  - 修复不能定时工作bug
+3.1.6:
+  - 每次更新时不再重置用户配置
+3.1.7:
+  - App/Expand模块不列入更新范畴
+3.2.0:
+  - 新增功能Group.serviceStatus
+3.2.1:
+  - Group.serviceStatus功能适配alemon-plugin，miao-plugin
+3.2.2:
+  - Group.serviceStatus功能适配kleePlugin.Expand、flower-plugin、suiyue，xianxin-plugin
+3.2.3:
+  - Group.serviceStatus功能适配xiaoyao-cvs-plugin
+3.2.4:
+  - 修复Group.serviceStatus功能存在的问题
+3.2.5:
+  - 修复Group.serviceStatus中有关miao-plugin的功能服务管理问题
+3.2.6:
+  - 更新时不自动继承备份的用户配置
+  - 修复代理人无法命令机器人的问题
+3.2.7:
+  - 修复群服务状态显示问题
+3.2.8:
+  - Group.serviceStatus功能适配yunzai-c-v-plugin
+  - 查看服务状态修改部分字体大小
+3.3.0:
+  - Group.serviceStatus新增服务viewAllServices
+  - Group.serviceStatus功能适配Tlon-Sky、expand-plugin、earth-k-plugin，akasha-terminal-plugin
+  - Group.serviceStatus功能适配ap-plugin、Atlas、auto-plugin、Icepray、phi-plugin
+  - Group.serviceStatus功能适配rconsole-plugin、Jinmaocuicuisha-plugin、WeLM-plugin、hs-qiqi-plugin、xiaoye-plugin
+  - Group.serviceStatus功能适配liulian-plugin、chatgpt-plugin、zhishui-plugin、vits-yunzai-Plugin、py-plugin
+  - Group.serviceStatus功能适配recreation-plugin、windoge-plugin、yenai-plugin、xiaofei-plugin、lin-plugin
+  - Group.serviceStatus功能适配l-plugin、zhi-plugin、achievements-plugin、xiuxian-plugin
+3.3.1:
+  - Group.serviceStatus功能适配TRSS-plugin
+3.3.2:
+  - 修复Group.serviceStatus适配TRSS-plugin问题
+3.3.3:
+  - 修复Group.serviceStatus适配TRSS-plugin问题
+3.4.0:
+  - 完善klee.help中可莉帮助的内容
+3.4.1:
+  - 更新字体

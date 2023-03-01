@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.workStatus {
+    position: relative;
+    background-image: url("../../Img/AppBotWork/工作时间背景图.jpg");
+    background-repeat: no-repeat;
+    background-size: 800px 1300px;
+    height: 1300px;
+    width: 800px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+}
+
+.workStatusTitle {
+    position: absolute;
+    top: 50px;
+    width: 800px;
+    font-weight: 400;
+    font-size: 55px;
+}
+
+.isWork {
+    position: absolute;
+    top: 200px;
+    width: 800px;
+    font-size: 50px;
+}
+
+.workTimeTitle {
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    left: 500px;
+    top: 350px;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.workTime {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    font-size: 50px;
+}
+
+.relaxTimeTitle {
+    position: absolute;
+    width: 200px;
+    top: 500px;
+    font-weight: 400;
+    font-size: 50px;
+    left: 500px;
+}
+
+.relaxTime {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    font-size: 50px;
+}
+
+.copyright {
+    position: absolute;
+    width: 800px;
+    top: 1250px;
+    font-size: 30px;
+}
