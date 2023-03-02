@@ -37,6 +37,7 @@ cd Yunzai-Bot
 ### 2.下载可莉最新版本（目前只在gitee上有）
 ```
 git clone https://gitee.com/j-k-komel/klee-cultivate-plugin.git ./plugins/klee-cultivate-plugin/
+
 ```
 ### 3.进入可莉根目录
 ```
