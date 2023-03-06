@@ -1,5 +1,5 @@
 import { XApp } from '../../Model/App/XApp.js'
-import { XSleep } from "../../Model/sleep/XSleep.js"
+import { XSleep } from "../../Model/Sleep/XSleep.js"
 import { XLog } from '../../Model/Log/XLog.js'
 import { XConfigYamlFile } from '../../Model/File/YamlFile/ConfigYamlFile/XConfigYamlFile.js'
 import fetch from "node-fetch"

@@ -216,7 +216,7 @@ Wiki:
   'inquireWiki':
     priority: 5000
     rule:
-      'wiki':
+      'ysWiki':
         reg: '^#?原神*'
         regKey: ''
         dsc: '查询原神BWiki界面'
@@ -233,7 +233,7 @@ example:
     priority: 5000
     rule:
       'news':
-        reg: '^#摸鱼日历$'
+        reg: '^#?摸鱼日历$'
         regKey: ''
         dsc: '展示今天的摸鱼日历'
         chatType: 'all'
