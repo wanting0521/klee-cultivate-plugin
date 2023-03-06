@@ -93,7 +93,7 @@ class Work extends XApp {
                 return true
             } else {
                 kleeDataYamlFile.setWorkStatus('off')
-                await this.reply(`${this.botName}下班啦~再见咯~`)
+                await this.reply(`${this.botName}不知道去哪里玩去啦~`)
                 return true
             }
         } else {
