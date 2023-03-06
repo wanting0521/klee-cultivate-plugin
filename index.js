@@ -19,7 +19,7 @@ const AppConfigYamlFile = new XAppConfigYamlFile()
 const WorkConfigYamlFile = new XAppBotWorkConfigYamlFile()
 
 // 给第一主人发送可莉使用帮助
-const version = bot.kleePluginVersion
+const version = bot.kleeCultivatePluginVersion
 if (kleeDataYamlFile.isFirstUseklee()) {
     kleeDataYamlFile.initkleeStatusYamlFile()
     // 保存启动机器人时的时间戳

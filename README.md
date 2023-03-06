@@ -1,4 +1,4 @@
-# kleePlugin（可莉）
+# klee-cultivate-plugin（可莉）
 云崽 [Yunzai-Bot](https://github.com/Le-niao/Yunzai-Bot) 插件，正在逐渐开发
 
 ---

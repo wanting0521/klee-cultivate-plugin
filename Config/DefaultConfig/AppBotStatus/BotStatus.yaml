@@ -5,13 +5,13 @@ birthday: ''
 # 机器人标签（最多四个）
 botLabel:
   - 'Yunzai-Bot'
-  - 'kleePlugin'
+  - 'klee-cultivate-plugin'
   - '原神'
   - '可可爱爱'
 # 主人标签（最多五个）
 masterLabel:
   - 'Yunzai-Bot'
-  - 'kleePlugin'
+  - 'klee-cultivate-plugin'
   - '原神'
   - '好人'
   - '善良'

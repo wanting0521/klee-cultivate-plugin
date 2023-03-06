@@ -49,7 +49,7 @@ class Status extends XApp {
             let botLabels = statusConfigYamlFile.getUsrSubConfig('botLabel','BotStatus')
             if (!botLabels || !lodash.isArray(botLabels)) {
                 log.error(`获取 ${statusConfigYamlFile.getUsrFilePath('BotStatus')} botLabel 失败，已设成默认`)
-                botLabels = ['Yunzai-Bot','kleePlugin','原神','可可爱爱']
+                botLabels = ['Yunzai-Bot','klee-cultivate-plugin','原神','可可爱爱']
                 statusConfigYamlFile.setUsrSubConfig('botLabel',botLabels,'BotStatus')
             }
             if (botLabels.length < 4) {
@@ -64,7 +64,7 @@ class Status extends XApp {
             let masterLabels = statusConfigYamlFile.getUsrSubConfig('masterLabel','BotStatus')
             if (!masterLabels || !lodash.isArray(masterLabels)) {
                 log.error(`获取 ${statusConfigYamlFile.getUsrFilePath('BotStatus')} masterLabel 失败，已设成默认`)
-                masterLabels = ['Yunzai-Bot','kleePlugin','原神','好人','善良']
+                masterLabels = ['Yunzai-Bot','klee-cultivate-plugin','原神','好人','善良']
                 statusConfigYamlFile.setUsrSubConfig('masterLabel',masterLabels,'BotStatus')
             }
             if (masterLabels.length < 5) {

@@ -12,7 +12,7 @@ class XLog extends klee {
      * @param text { String } 描述文本
      */
     warn(text) {
-        logger.warn(`${chalk.blue('[kleePlugin]')}${text}`)
+        logger.warn(`${chalk.blue('[klee-cultivate-plugin]')}${text}`)
     }
 
     /**
@@ -20,7 +20,7 @@ class XLog extends klee {
      * @param text { String } 描述文本
      */
     info(text) {
-        logger.info(`${chalk.blue('[kleePlugin]')}${text}`)
+        logger.info(`${chalk.blue('[klee-cultivate-plugin]')}${text}`)
     }
 
     /**
@@ -28,7 +28,7 @@ class XLog extends klee {
      * @param text { String } 描述文本
      */
     debug(text) {
-        logger.debug(`${chalk.blue('[kleePlugin]')}${text}`)
+        logger.debug(`${chalk.blue('[klee-cultivate-plugin]')}${text}`)
     }
 
     /**
@@ -36,7 +36,7 @@ class XLog extends klee {
      * @param text { String } 描述文本
      */
     mark(text) {
-        logger.mark(`${chalk.blue('[kleePlugin]')}${text}`)
+        logger.mark(`${chalk.blue('[klee-cultivate-plugin]')}${text}`)
     }
 
     /**
@@ -44,7 +44,7 @@ class XLog extends klee {
      * @param text { String } 描述文本
      */
     error(text) {
-        logger.error(`${chalk.blue('[kleePlugin]')}${text}`)
+        logger.error(`${chalk.blue('[klee-cultivate-plugin]')}${text}`)
     }
 }
 

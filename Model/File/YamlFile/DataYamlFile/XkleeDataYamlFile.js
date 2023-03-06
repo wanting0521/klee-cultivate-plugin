@@ -239,7 +239,7 @@ class XkleeDataYamlFile extends XDataYamlFile {
                 this.saveSubData('groupServiceStatus',status,'kleeStatus')
                 return 'on'
             }
-            if (pluginName === 'kleePlugin') {
+            if (pluginName === 'klee-cultivate-plugin') {
                 status[qq] = {}
                 status[qq][pluginName] = {}
                 status[qq][pluginName][modelName] = {}
@@ -262,7 +262,7 @@ class XkleeDataYamlFile extends XDataYamlFile {
                     return 'on'
                 }
             }
-            if (pluginName === 'kleePlugin') {
+            if (pluginName === 'klee-cultivate-plugin') {
                 if (status[qq][pluginName] !== undefined) {
                     if (status[qq][pluginName][modelName] !== undefined) {
                         if (status[qq][pluginName][modelName][serviceName] !== undefined) {
@@ -320,7 +320,7 @@ class XkleeDataYamlFile extends XDataYamlFile {
                 this.saveSubData('groupServiceStatus',serviceStatus,'kleeStatus')
                 return
             }
-            if (pluginName === 'kleePlugin') {
+            if (pluginName === 'klee-cultivate-plugin') {
                 serviceStatus[qq] = {}
                 serviceStatus[qq][pluginName] = {}
                 serviceStatus[qq][pluginName][modelName] = {}
@@ -338,7 +338,7 @@ class XkleeDataYamlFile extends XDataYamlFile {
                 this.saveSubData('groupServiceStatus',serviceStatus,'kleeStatus')
                 return
             }
-            if (pluginName === 'kleePlugin') {
+            if (pluginName === 'klee-cultivate-plugin') {
                 if (serviceStatus[qq][pluginName] !== undefined) {
                     if (serviceStatus[qq][pluginName][modelName] !== undefined) {
                         serviceStatus[qq][pluginName][modelName][serviceName] = status
@@ -417,7 +417,7 @@ class XkleeDataYamlFile extends XDataYamlFile {
     }
 
     /**
-     * 是否第一次使用kleePlugin
+     * 是否第一次使用klee-cultivate-plugin
      * @returns { Boolean }
      */
     isFirstUseklee() {
@@ -429,8 +429,8 @@ class XkleeDataYamlFile extends XDataYamlFile {
     }
 
     /**
-     * 设置是否第一次使用kleePlugin
-     * @param value { Boolean } 是否第一次使用kleePlugin
+     * 设置是否第一次使用klee-cultivate-plugin
+     * @param value { Boolean } 是否第一次使用klee-cultivate-plugin
      */
     setIsFirstUseklee(value) {
         this.saveSubData('isFirstUseklee',value,'kleeStatus')

@@ -38,7 +38,7 @@ class XImgDataRender extends XRender {
             return null
         }
         return {
-            htmlPath: `./plugins/kleePlugin/Resource/Web/${this.modelName}/${this.saveId}.html`,
+            htmlPath: `./plugins/klee-cultivate-plugin/Resource/Web/${this.modelName}/${this.saveId}.html`,
             resAbsPath: path.join(this.kleeRootAbsPath,'Resource/Web',this.modelName),
             saveId: this.saveId,
             version: cfg.package['version'],

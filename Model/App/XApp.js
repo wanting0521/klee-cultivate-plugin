@@ -176,7 +176,7 @@ class XApp extends klee {
                 }
                 continue
             }
-            if (plugin === 'kleePlugin') {
+            if (plugin === 'klee-cultivate-plugin') {
                 const defAppConfig = AppConfigYamlFile.getDefAppConfigYaml()
                 const modules = Object.keys(defAppConfig)
                 appServiceNames[plugin] = {}

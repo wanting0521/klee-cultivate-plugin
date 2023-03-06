@@ -163,7 +163,7 @@ class XPuppeteer extends klee {
      */
     dealTpl(name, param) {
         const { htmlPath, saveId = name } = param
-        const HtmlResPath = './plugins/kleePlugin/Data/Html'
+        const HtmlResPath = './plugins/klee-cultivate-plugin/Data/Html'
         const savePath = `${HtmlResPath}/${name}/${saveId}.html`
         /** 读取html模板 */
         dir.mkDirsSync(`${HtmlResPath}/${name}`)

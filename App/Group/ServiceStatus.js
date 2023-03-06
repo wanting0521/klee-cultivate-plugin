@@ -29,7 +29,7 @@ class ServiceStatus extends XApp {
             msgs.push('已安装的所有服务如下：\n[] - 插件名\n<> - 模块名\n() - 服务名\n')
             for (const appServiceNamesKey in appServiceNames) {
                 msgs.push(`[${appServiceNamesKey}]\n`)
-                if ((appServiceNamesKey !== 'kleePlugin' &&
+                if ((appServiceNamesKey !== 'klee-cultivate-plugin' &&
                     appServiceNamesKey !== 'alemon-plugin' &&
                     appServiceNamesKey !== 'akasha-terminal-plugin' &&
                     appServiceNamesKey !== 'lin-plugin' &&
@@ -129,7 +129,7 @@ class ServiceStatus extends XApp {
         let startServiceCount = 1
         let endServiceCount = 0
         for (const appServiceNamesKey in appServiceNames) {
-            if ((appServiceNamesKey !== 'kleePlugin' &&
+            if ((appServiceNamesKey !== 'klee-cultivate-plugin' &&
                 appServiceNamesKey !== 'alemon-plugin' &&
                 appServiceNamesKey !== 'akasha-terminal-plugin' &&
                 appServiceNamesKey !== 'lin-plugin' &&
@@ -196,7 +196,7 @@ class ServiceStatus extends XApp {
             }
             const appServiceNames = await this.getAllAppServiceName()
             for (const appServiceNamesKey in appServiceNames) {
-                if ((appServiceNamesKey !== 'kleePlugin' &&
+                if ((appServiceNamesKey !== 'klee-cultivate-plugin' &&
                     appServiceNamesKey !== 'alemon-plugin' &&
                     appServiceNamesKey !== 'akasha-terminal-plugin' &&
                     appServiceNamesKey !== 'lin-plugin' &&
@@ -272,7 +272,7 @@ class ServiceStatus extends XApp {
             }
             const appServiceNames = await this.getAllAppServiceName()
             for (const appServiceNamesKey in appServiceNames) {
-                if ((appServiceNamesKey !== 'kleePlugin' &&
+                if ((appServiceNamesKey !== 'klee-cultivate-plugin' &&
                     appServiceNamesKey !== 'alemon-plugin' &&
                     appServiceNamesKey !== 'akasha-terminal-plugin' &&
                     appServiceNamesKey !== 'lin-plugin' &&
@@ -347,7 +347,7 @@ class ServiceStatus extends XApp {
             }
             const appServiceNames = await this.getAllAppServiceName()
             for (const appServiceNamesKey in appServiceNames) {
-                if ((appServiceNamesKey !== 'kleePlugin' &&
+                if ((appServiceNamesKey !== 'klee-cultivate-plugin' &&
                     appServiceNamesKey !== 'alemon-plugin' &&
                     appServiceNamesKey !== 'akasha-terminal-plugin' &&
                     appServiceNamesKey !== 'lin-plugin' &&
@@ -372,7 +372,7 @@ class ServiceStatus extends XApp {
                 }
             }
             AppConfigYamlFile.writeYamlFile(group,groupPath)
-            await this.reply('对本群的所有服务已关闭（除必要的kleePlugin.serviceStatus服务外）~')
+            await this.reply('对本群的所有服务已关闭（除必要的klee-cultivate-plugin.serviceStatus服务外）~')
             return true
         }
         return true
@@ -395,7 +395,7 @@ class ServiceStatus extends XApp {
             AppConfigYamlFile.writeYamlFile(group,groupPath)
             const appServiceNames = await this.getAllAppServiceName()
             for (const appServiceNamesKey in appServiceNames) {
-                if ((appServiceNamesKey !== 'kleePlugin' &&
+                if ((appServiceNamesKey !== 'klee-cultivate-plugin' &&
                     appServiceNamesKey !== 'alemon-plugin' &&
                     appServiceNamesKey !== 'akasha-terminal-plugin' &&
                     appServiceNamesKey !== 'lin-plugin' &&
@@ -430,7 +430,7 @@ class ServiceStatus extends XApp {
             let groupServiceStatus = []
             let allServiceStatus = kleeDataYamlFile.getGroupServiceStatus(this.groupQQ,'','','all')
             for (const appServiceNamesKey in appServiceNames) {
-                if ((appServiceNamesKey !== 'kleePlugin' &&
+                if ((appServiceNamesKey !== 'klee-cultivate-plugin' &&
                     appServiceNamesKey !== 'alemon-plugin' &&
                     appServiceNamesKey !== 'akasha-terminal-plugin' &&
                     appServiceNamesKey !== 'lin-plugin' &&
@@ -525,7 +525,7 @@ class ServiceStatus extends XApp {
             if (allServiceStatus === 'on') {
                 dsc = '对本群的所有服务已开启'
             } else if (allServiceStatus === 'off') {
-                dsc = '对本群的所有服务已关闭（除必要的kleePlugin.serviceStatus服务外）'
+                dsc = '对本群的所有服务已关闭（除必要的klee-cultivate-plugin.serviceStatus服务外）'
             } else {
                 dsc = '本群的服务状态如下'
             }
