@@ -114,6 +114,16 @@ Bot:
       permission: 'master'
       permissionLevel: 0
       favorabilityLevel: 0
+    'goodNight':
+      reg: '^#?可莉晚安$'
+      regKey: ''
+      dsc: '可莉是很讲礼貌的哟~'
+      chatType: 'all'
+      event: 'message'
+      isShowLog: true
+      permission: 'all'
+      permissionLevel: 0
+      favorabilityLevel: 0
 
 # Group 模块
 Group:
@@ -204,16 +214,6 @@ Group:
        reg: '^#?查看所有服务$'
        regKey: ''
        dsc: '查看已安装的所有服务'
-       chatType: 'all'
-       event: 'message'
-       isShowLog: true
-       permission: 'all'
-       permissionLevel: 0
-       favorabilityLevel: 0
-     'goodNight':
-       reg: '^#?可莉晚安$'
-       regKey: ''
-       dsc: '可莉是很讲礼貌的哟~'
        chatType: 'all'
        event: 'message'
        isShowLog: true

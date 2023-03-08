@@ -13,3 +13,6 @@
 
 /App/Group/BackupAppConfig.yaml
 /App/Group/AppConfig.yaml
+
+/App/**/BackupAppConfig.yaml
+/App/**/AppConfig.yaml
