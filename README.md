@@ -27,6 +27,8 @@
 | Group | closeService | #?关闭(.)+服务 | 对本群关闭某服务 |
 | Group | viewAgents | #?本群代理人 | 查看本群的所有代理人 |
 | Group | viewAllServices | #?查看所有服务 | 查看已安装的所有服务 |
+| Wiki | ysWiki | #?原神 | 返回对应的原神Wiki界面（不支持别名） |
+| example | news | #?摸鱼日历 | 生成当日的摸鱼日历 |
 ---
 
 ## 使用指南
@@ -34,7 +36,7 @@
 ```
 cd Yunzai-Bot
 ```
-### 2.下载可莉最新版本（目前只在gitee上有）
+### 2.下载可莉最新版本（目前只在gitee上有，github版本可能有测试版本，不一定保证可用）
 ```
 git clone https://gitee.com/j-k-komel/klee-cultivate-plugin.git ./plugins/klee-cultivate-plugin/
 

@@ -3,7 +3,9 @@ import { XAppBotWorkConfigYamlFile } from '../../Model/File/YamlFile/ConfigYamlF
 import { XPuppeteer } from '../../Model/Puppeteer/XPuppeteer.js'
 import { XImgDataRender } from '../../Model/Render/XImgDataRender.js'
 import { XkleeDataYamlFile } from '../../Model/File/YamlFile/DataYamlFile/XkleeDataYamlFile.js'
+import { XLog } from '../../Model/Log/XLog.js'
 
+const log = new XLog()
 const kleeDataYamlFile = new XkleeDataYamlFile()
 const WorkConfigYamlFile = new XAppBotWorkConfigYamlFile()
 const puppeteer = new XPuppeteer()
@@ -137,6 +139,23 @@ class Work extends XApp {
             return true
         }
     }
+        /**
+     * 晚安
+     */
+        async goodNight(e) {
+            log.warn(e)
+            if (await this.canUseFnc(0)) {
+                if (kleeDataYamlFile.getWorkStatus() === 'off') {
+                    await this.reply(`${this.botName}还没有到睡觉时间哦~`)
+                    return true
+                } else {
+                    await this.reply(`你也要晚安吖，${e}`)
+                    return true
+                }
+            } else {
+                return true
+            }
+        }
 }
 
 export { Work }

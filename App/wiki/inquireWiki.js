@@ -10,7 +10,7 @@ class Wiki extends XApp {
    * @param e oicq传递的事件参数e
    */
   async ysWiki(e) {
-    let name = e.msg.split('#原神')[1]
+    let name = e.msg.split('原神')[1]
     await e.reply(`呐~${name}的百科页面\nhttps://wiki.biligame.com/ys/${encodeURI(name)}`)
    // await this.reply(this.e.msg)
   }

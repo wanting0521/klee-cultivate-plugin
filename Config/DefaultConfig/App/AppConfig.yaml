@@ -210,35 +210,3 @@ Group:
        permission: 'all'
        permissionLevel: 0
        favorabilityLevel: 0
-
-#Wiki模块
-Wiki:
-  'inquireWiki':
-    priority: 5000
-    rule:
-      'ysWiki':
-        reg: '^#?原神*'
-        regKey: ''
-        dsc: '查询原神BWiki界面'
-        chatType: 'all'
-        event: 'message'
-        isShowLog: true
-        permission: 'all'
-        permissionLevel: 0
-        favorabilityLevel: 0
-
-#example模块
-example:
-  'fishCalendar':
-    priority: 5000
-    rule:
-      'news':
-        reg: '^#?摸鱼日历$'
-        regKey: ''
-        dsc: '展示今天的摸鱼日历'
-        chatType: 'all'
-        event: 'message'
-        isShowLog: true
-        permission: 'all'
-        permissionLevel: 0
-        favorabilityLevel: 0

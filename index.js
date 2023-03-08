@@ -55,7 +55,7 @@ log.info(`~~~~~~~~~~~~~~~~~~~~ ${chalk.bold('QAQ')} ~~~~~~~~~~~~~~~~~~~~~`)
 log.info(`~\t\t${chalk.yellow('欢迎使用可莉插件')}\t\t~`)
 log.info(`~\t${chalk.green('版本')}\t${chalk.magenta(version)}\t\t\t\t~`)
 log.info(`~\t${chalk.green('作者')}\t${chalk.blue('婉婷')}\t\t\t~`)
-log.info(`~\t${chalk.green('基于雪儿插件二次开发，作者：雪儿不怕冷')}\t\t\t~`)
+log.info(`~\t${chalk.green('基于雪儿插件二次开发，作者：雪儿不怕冷')}~`)
 log.info(`~\t${chalk.green('交流群')}\t1063837198\t\t\t~`)
 log.info(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`)
 
