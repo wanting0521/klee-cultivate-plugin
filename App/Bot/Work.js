@@ -143,13 +143,13 @@ class Work extends XApp {
      * 晚安
      */
         async goodNight(e) {
-            log.warn(e.from_id,e.sender)
+            log.warn(e.toString())
             if (await this.canUseFnc(0)) {
-                if (kleeDataYamlFile.getWorkStatus() === 'off') {
+                if (kleeDataYamlFile.getWorkStatus() !== 'off') {
                     await this.reply(`${this.botName}还没有到睡觉时间哦~`)
                     return true
                 } else {
-                    await this.reply(`你也要晚安吖，`)
+                    await this.reply(`你也要晚安吖`)
                     return true
                 }
             } else {
