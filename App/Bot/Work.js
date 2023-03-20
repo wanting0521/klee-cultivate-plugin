@@ -143,7 +143,7 @@ class Work extends XApp {
      * 晚安
      */
         async goodNight(e) {
-            log.warn(e.toString())
+            log.warn(this.user)
             if (await this.canUseFnc(0)) {
                 if (kleeDataYamlFile.getWorkStatus() !== 'off') {
                     await this.reply(`${this.botName}还没有到睡觉时间哦~`)
