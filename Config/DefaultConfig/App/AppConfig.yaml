@@ -115,7 +115,7 @@ Bot:
       permissionLevel: 0
       favorabilityLevel: 0
     'goodNight':
-      reg: '#?可莉晚安$'
+      reg: '#?小?可莉晚安$'
       regKey: ''
       dsc: '可莉是很讲礼貌的哟~'
       chatType: 'all'

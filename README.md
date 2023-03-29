@@ -16,6 +16,7 @@
 | Work | endWork | #?可莉结束工作 | 让机器人不处理消息 |
 | Work | openTimedWork | #?开启定时工作 | 让机器人定时休息和工作 |
 | Work | endTimedWork | #?关闭定时工作 | 不让机器人定时休息和工作 |
+| Work | goodNight | #?可莉晚安 | 给机器人道晚安 |
 | Status | setBotName | #?设置名字(.)* | 给机器人取个名字 |
 | Status | viewBotIDCard | #?机器人身份证 | 查看机器人的身份证信息 |
 | Group | openAllService | #?开启所有服务 | 对本群开启所有服务 |
@@ -38,7 +39,7 @@ cd Yunzai-Bot
 ```
 ### 2.下载可莉最新版本（目前只在gitee上有，github版本可能有测试版本，不一定保证可用）
 ```
-git clone https://gitee.com/j-k-komel/klee-cultivate-plugin.git ./plugins/klee-cultivate-plugin/
+git clone -b main https://gitee.com/j-k-komel/klee-cultivate-plugin.git ./plugins/klee-cultivate-plugin/
 
 ```
 ### 3.进入可莉根目录
@@ -51,6 +52,10 @@ pnpm install -P
 ``` -->
 <!-- ## 帮助文档（目前正在建设中~） -->
 <!-- [可莉插件使用帮助](https://docs.qq.com/doc/DZERCSERCZ09PdEl0) -->
+
+## 画饼区
+ + 好感度（聊天交互影响好感度）
+ + 好感度影响功能
 
 ## 拓展库（暂无）
 | 拓展 | 作者 | 说明 | 

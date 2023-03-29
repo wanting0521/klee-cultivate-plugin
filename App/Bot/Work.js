@@ -33,7 +33,7 @@ class Work extends XApp {
             }
         }
         // 不工作：不处理
-        return kleeDataYamlFile.getWorkStatus() === 'off'
+        return kleeDataYamlFile.getWorkStatus() === 'off' && this.isMaster
     }
 
     /**
@@ -143,7 +143,7 @@ class Work extends XApp {
      * 晚安
      */
         async goodNight(e) {
-            log.warn(this.user)
+            log.warn(this.e)
             if (await this.canUseFnc(0)) {
                 if (kleeDataYamlFile.getWorkStatus() !== 'off') {
                     await this.reply(`${this.botName}还没有到睡觉时间哦~`)

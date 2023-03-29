@@ -17,7 +17,10 @@ class XAppBotWorkConfigYamlFile extends XConfigYamlFile {
     constructor() {
         super('AppBotWork')
     }
-
+// 定时开始工作函数
+    scheduleStartWork
+// 定时关闭工作函数
+    scheduleEndWork
     /**
      * 获取用户配置的指定群的代理人
      * @param groupQQ { Number } 群号
@@ -74,14 +77,16 @@ class XAppBotWorkConfigYamlFile extends XConfigYamlFile {
         const imgPath = path.join(this.kleeRootAbsPath,'Resource/Img/AppBotWork',config['img'])
         const msg = [segment.image(imgPath),text]
         if (type === 'start') {
-            schedule.scheduleJob(cron,async () => {
-                if (kleeDataYamlFile.getTimedWork() === 'on') {
+            this.scheduleStartWork.cancel()
+            this.scheduleStartWork = schedule.scheduleJob(cron,async () => {
+                if (kleeDataYamlFile.getTimedWork() === 'off') {
                     kleeDataYamlFile.setWorkStatus('on')
                     await bot.sendMsgForAllGroup(msg)
                 }
             })
         } else if (type === 'end') {
-            schedule.scheduleJob(cron, async () => {
+            this.scheduleEndWork.cancel()
+            this.scheduleEndWork = schedule.scheduleJob(cron, async () => {
                 if (kleeDataYamlFile.getTimedWork() === 'on') {
                     kleeDataYamlFile.setWorkStatus('off')
                     await bot.sendMsgForAllGroup(msg)
